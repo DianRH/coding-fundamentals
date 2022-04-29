@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+#card {
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 2px 5px #7D7F7D;
+    width: 500px;
+    height: 400px;
+} 

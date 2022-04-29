@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // Crear un auto: Atributos y métodos
+      /*const auto = {
+        marca: "Ferrari",
+        modelo: "488 GTB",
+        color: "black",
+        año: "1938",
+        transmision: "automatico",
+        deportivo: true,
+        llantas:{
+          ancho: 205,
+          perfil: 55,
+          construccion: "R",
+          diametro_rin: 16,
+          indice_carga: 99,
+          indice_velocidad: "w"
+        },
+        tipo(){
+          const diseño = this.deportivo
+          ? "es un auto deportivo para correr a velocidades impresionantes"
+          : "es un auto ordinario"
+
+          console.log(`Genial! el ${this.marca} ${this.modelo} ${diseño} `);
+        }
+        lectura(){
+          const especificaciones = `${this.llantas.ancho}/${this.llantas.perfil} ${this.llantas.construccion}${this.llantas.diametro_rin} ${this.llantas.indice_carga}${this.llantas.indice_velocidad}`
+          console.log(`Las medidas de llantas que usa el auto es ${especificaciones}`);
+        }
+      }
+      console.log(auto.tipo());*/
+
+      // Crear clase automático
+      /*class Auto{
+        marca= "Ferrari"
+        modelo= "488 GTB"
+        color= "negro"
+        año= "1938"
+        transmision= "automatico"
+        deportivo= true
+        llantas={
+          ancho: 205,
+          perfil: 55,
+          construccion: "R",
+          diametro_rin: 16,
+          indice_carga: 99,
+          indice_velocidad: "w"
+        }
+        tipo(){
+          const diseño = this.deportivo
+          ? "es un auto deportivo para correr a velocidades impresionantes"
+          : "es un auto ordinario" ;
+
+          console.log(`Genial! el ${this.marca} ${this.modelo} ${diseño} `);
+        }
+        lectura(){
+          const especificaciones = `${this.llantas.ancho}/${this.llantas.perfil} ${this.llantas.construccion}${this.llantas.diametro_rin} ${this.llantas.indice_carga}${this.llantas.indice_velocidad}`
+          console.log(`Las medidas de llantas que usa el auto es ${especificaciones}`);
+        }
+      }
+
+      const ferrari = new Auto()
+      console.log(ferrari);
+      ferrari.tipo();
+      ferrari.lectura();*/
+
+      //Reto: Crear la clase de Auto. Con atributos y metodos y un constructor
+      class Auto{
+        constructor(marca,modelo,color,año,transmision,deportivo,llantas){
+                console.log("Creando el objeto...")
+                // Si existe la propiedad marca en la clase, reemplaza el valor. Sino, crea la propiedad
+                this.marca = marca
+                this.modelo = modelo
+                this.color = color
+                this.año = año
+                this.transmision = transmision
+                this.deportivo = deportivo
+                this.llantas = llantas
+              }
+
+        tipo(){
+          const diseño = this.deportivo
+          ? "es un auto deportivo para correr a velocidades impresionantes"
+          : "es un auto ordinario" ;
+
+          console.log(`Genial! el ${this.marca} ${this.modelo} ${diseño} `);
+        }
+
+        lectura(){
+          const especificaciones = `${this.llantas.ancho}/${this.llantas.perfil} ${this.llantas.construccion}${this.llantas.diametro_rin} ${this.llantas.indice_carga}${this.llantas.indice_velocidad}`
+          console.log(`Las medidas de llantas que usa el ${this.marca} ${this.modelo} es ${especificaciones}`);
+        }
+      }
+
+
+      const ferrari = new Auto(
+        "Ferrari",
+        "488 GTB",
+        "negro",
+        2015,
+        "automatico",
+        true,
+        {
+          ancho: 205,
+          perfil: 55,
+          construccion: "R",
+          diametro_rin: 16,
+          indice_carga: 99,
+          indice_velocidad: "w"
+        })
+
+  console.log(ferrari);
+  ferrari.tipo();
+  ferrari.lectura();
+
+  const maserati = new Auto(
+    "Maserati",
+    "Ghilbli",
+    "rojo",
+    2015,
+    "automatico",
+    true,
+    {
+      ancho: 150,
+      perfil: 50,
+      construccion: "R",
+      diametro_rin: 15,
+      indice_carga: 85,
+      indice_velocidad: "w"
+    })
+
+console.log(maserati);
+maserati.tipo();
+maserati.lectura();
+
+    </script>
+  </body>
+</html>
