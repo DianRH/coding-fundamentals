@@ -116,3 +116,32 @@ PASO 2  FUNCIONAMIENTO
   al azar Math.floor(numero) 2.6 -> 2
   Math.round(numero) 2.6 -> 3
   Math.ceil(numero) parte entera inmediata superior
+  
+/* ----- MENU ------ */
+
+  ELEGIR JUGADOR
+  1.- SELECCIONAR AL PERSONAJE QUE DESEA (HERMANO MAYOR O HERMANO MENOR) :)
+
+  RESTRICCIONES
+  1.- SI LE DA EN CANCELAR VOLVER A PREGUNTAR
+  2.- SI LE DA EN ACEPTAR TERMINAR
+
+  NOMBRE DE JUGADOR PARA JUGADOR 1 Y JUGADOR
+  1.- INGRESAR NOMBRE
+  2.- PREGUNTAR SI ES CORRECTO
+  3.- SI ES CORRECTO TERMINAR
+  3.1.- SI NO ES CORRECTO VOLVER A
+            1.-INGRESAR NOMBRE
+            2.-PREGUNTAR SI ES CORRECTO
+            3.-SI ES CORRECTO TERMINAR
+
+  RESTRICCIONES
+  1.- DEBE DE INGRESAR UN NOMBRE SI DA CLIC EN CANCELAR
+      VOLVER A PREGUNTAR POR NOMBRE
+  2.- SI LE DA CLIC EN ACEPTAR PERO NO INGRESA NOMBRE DEBE
+      VOLVER A PREGUNTAR POR NOMBRE
+
+  ¿COMO SE VA A MOSTRAR EN EL JUEGO? NOMBRE MAYOR/ MENOR
+
+  trim() elimina espacios en blanco de los extremos de un string
+  https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim

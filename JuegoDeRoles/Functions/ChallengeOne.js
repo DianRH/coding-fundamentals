@@ -8,7 +8,7 @@ function ChallengeOne() {
     C   Sobre la silla\n
     \nIngresa A, B ó C`)
     .toLowerCase()
-    .trim();
+    .trim(); 
 
     // da error por toLowerCase() method
     /*if (findObject === null) {
@@ -17,33 +17,37 @@ function ChallengeOne() {
 
 
     let easyTask = FilterTasks("fácil", undefined);
-        easyTask = AleatoryTask(easyTask);
     let hardTask = FilterTasks("dificil", undefined);
-        hardTask = AleatoryTask(hardTask);
-    let assignedTask;
+    let assignedTask1;
+    let assignedTask2;
 
     switch (findObject) {
         case "a":
-            assignedTask = easyTask.task
+            assignedTask1 = AleatoryTask(easyTask);
+            assignedTask2 = AleatoryTask(hardTask);
 
-            alert(`Encontraste el control!\n
+            alert(`Encontraste el control :D!\n
             Mamá está feliz y te ha dado un beso, te ha asignado la 
-            tarea ${assignedTask}`);
+            tarea ${assignedTask1.task}\ny a tu hermano la tarea ${assignedTask2.task}`);
             break;
         
         case "b":
         case "c":
-            assignedTask = hardTask.task
+            assignedTask1 = AleatoryTask(hardTask);
+            assignedTask2 = AleatoryTask(hardTask);
 
+            if (assignedTask1 === assignedTask2) {
+                assignedTask2 = AleatoryTask(hardTask)
+            } else {
+                assignedTask2
+            }
+        
             alert(`Ahi no se encuentra!\n
             a Mamá no le agrado, y te ha asignado la 
-            tarea ${assignedTask}`);
-            break;
-        default:
-
+            tarea ${assignedTask1.task}\ny a tu hermano la tarea ${assignedTask2.task}`);
             break;
     }
-    return assignedTask; 
+    return {assignedTask1, assignedTask2}; 
  
 }
 
