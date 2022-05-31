@@ -1,6 +1,27 @@
-let nombreJugador = prompt("Bienvenido! Ingresa tu nombre por favor: ");
+import {  Character, Username } from "./Menu/Menu.js"
+import { ChallengeOne } from "./Functions/ChallengeOne.js";
+
+alert(`Bienvenid@!\nHoy combatiras para que tus papás te asignen el menor
+número de tareas del hogar, tu máximo de tareas son 5, 
+juega con estrategia y vence a tu hermano.`);
+
+const character = Character();
+const username = Username();
+
+alert(`Comencemos ${username}! tu elegiste ser el ${character}.`);
+
+let taskOne = ChallengeOne();
 
 
-let inicio = console.log(`${nombreJugador} hoy pelearas por hacer el menor numero de tareas
-              de la casa que te corresponden, tu máximo de tareas son 5, juega
-              con estrategia y podras disfrutar mas tiempo de tu dia, comencemos!`);
+// PROCESO.....
+// function Player(username, character, taskOne) {
+    
+//     console.log(`${username} eres el ${character}\ntus tareas asignadas son:
+//     ${taskOne}`);
+// }
+
+// Player(username, character, taskOne)
+
+ 
+
+ 
