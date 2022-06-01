@@ -18,36 +18,36 @@ function ChallengeOne() {
 
     let easyTask = FilterTasks("fácil", undefined);
     let hardTask = FilterTasks("dificil", undefined);
-    let assignedTask1;
-    let assignedTask2;
+    let task1Player1;
+    let task1Player2;
 
     switch (findObject) {
         case "a":
-            assignedTask1 = AleatoryTask(easyTask);
-            assignedTask2 = AleatoryTask(hardTask);
+            task1Player1 = AleatoryTask(easyTask);
+            task1Player2 = AleatoryTask(hardTask);
 
             alert(`Encontraste el control :D!\n
             Mamá está feliz y te ha dado un beso, te ha asignado la 
-            tarea ${assignedTask1.task}\ny a tu hermano la tarea ${assignedTask2.task}`);
+            tarea ${task1Player1.task}\ny a tu hermano la tarea ${task1Player2.task}`);
             break;
         
         case "b":
         case "c":
-            assignedTask1 = AleatoryTask(hardTask);
-            assignedTask2 = AleatoryTask(hardTask);
+            task1Player1 = AleatoryTask(hardTask);
+            task1Player2 = AleatoryTask(hardTask);
 
-            if (assignedTask1 === assignedTask2) {
-                assignedTask2 = AleatoryTask(hardTask)
+            if (task1Player1 === task1Player2) {
+                task1Player2 = AleatoryTask(hardTask)
             } else {
-                assignedTask2
+                task1Player2
             }
         
             alert(`Ahi no se encuentra!\n
             a Mamá no le agrado, y te ha asignado la 
-            tarea ${assignedTask1.task}\ny a tu hermano la tarea ${assignedTask2.task}`);
+            tarea ${task1Player1.task}\ny a tu hermano la tarea ${task1Player2.task}`);
             break;
     }
-    return {assignedTask1, assignedTask2}; 
+    return {task1Player1, task1Player2}; 
  
 }
 

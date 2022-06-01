@@ -1,5 +1,3 @@
-import { Player } from "../Functions/Player.js";
-
 function Character() {
     let character = prompt(
         "Menu\nSelecciona tu personaje:\n1. Hermano mayor\n2. Hermano menor"

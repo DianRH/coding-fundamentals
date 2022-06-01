@@ -1,8 +1,10 @@
-function Player(username, character, taskOne) {
+function Player(username, character, taskOne, taskTwo, taskThree) {
     const player = {
         username,
         character,
         taskOne,
+        taskTwo,
+        taskThree
     }
     return player
 }
