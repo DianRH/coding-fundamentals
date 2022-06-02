@@ -1,8 +1,8 @@
 import {tasks} from "../Data/tasks.js"
 
-function FilterTasks(level, day) {
+function EasyAndHardTasks(level) {
     const filterTasks = tasks.filter(
-        (task) => task.level === level && task.day === day
+        (task) => task.level === level
     )
     return filterTasks
 }
@@ -14,6 +14,6 @@ function AleatoryTask(task) {
 }
 
 export {
-    FilterTasks,
+    EasyAndHardTasks,
     AleatoryTask
 };

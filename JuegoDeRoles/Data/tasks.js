@@ -5,7 +5,6 @@ const tasks = [
     },
     {
         "task": "PASEAR A TUS DOS PERROS",
-        "day": 2,
         "level": "fácil"
     },
     {
@@ -26,12 +25,10 @@ const tasks = [
     },
     {
         "task": "TRAPEAR SALA",
-        "day": 4,
         "level": "dificl"
     },
     {
         "task": "TRAPEAR HABITACIONES",
-        "day": 7,
         "level": "dificil"
     },
     {
@@ -40,17 +37,14 @@ const tasks = [
     },
     {
         "task": "LAVAR EL BAÑO",
-        "day": 7,
         "level": "dificil"
     },
     {
         "task": "REGAR LAS PLANTAS",
-        "day": 3,
         "level": "fácil"
     },
     {
         "task": "TIRAR LA BASURA",
-        "day": 4,
         "level": "fácil"
     },
     {
@@ -59,17 +53,14 @@ const tasks = [
     },
     {
         "task": "COMPRAR LA DESPENSA",
-        "day": 7,
         "level": "fácil"
     },
     {
         "task": "LIMPIAR VENTANAS",
-        "day": 15,
         "level": "dificil"
     },
     {
         "task": "ORDENAR EL REFRIGERADOR",
-        "day": 9,
         "level": "fácil"
     },
     {
@@ -78,7 +69,6 @@ const tasks = [
     },
     {
         "task": "LIMPIAR LA ESTUFA",
-        "day": 15,
         "level": "dificil"
     },
     {
